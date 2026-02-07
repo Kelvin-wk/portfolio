@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <h1>Kelvin Wachira</h1>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2><span class="typing">About Me</span></h2>
+      <p>Get to know who I am and what I do</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <h2 class="scroll-fade">Who I Am</h2>
+    <p class="scroll-fade">
+      Hi! I'm Kelvin, a passionate web developer and creator. I love building responsive, user-friendly websites
+      and applications that solve real-world problems. With a focus on clean code and modern technologies, I'm
+      dedicated to creating digital experiences that make an impact.
+    </p>
+
+    <h2 class="scroll-fade">My Skills</h2>
+    <div class="skills-list scroll-fade">
+      <div class="skill-tag">HTML5</div>
+      <div class="skill-tag">CSS3</div>
+      <div class="skill-tag">JavaScript</div>
+      <div class="skill-tag">Responsive Design</div>
+      <div class="skill-tag">Web Development</div>
+      <div class="skill-tag">Problem Solving</div>
+      <div class="skill-tag">Git</div>
+      <div class="skill-tag">UI/UX</div>
+    </div>
+
+    <h2 class="scroll-fade">My Journey</h2>
+    <p class="scroll-fade">
+      I started my journey in web development with a curiosity about how websites work. Over time, I've honed my
+      skills and developed a deep understanding of front-end technologies. I'm passionate about continuous learning
+      and staying up-to-date with the latest industry trends.
+    </p>
+
+    <h2 class="scroll-fade">What Drives Me</h2>
+    <p class="scroll-fade">
+      I believe in the power of technology to create positive change. Every project is an opportunity to learn something
+      new and contribute something meaningful to the digital world. Whether it's a personal portfolio or a complex web
+      application, I approach each challenge with enthusiasm and dedication.
+    </p>
+
+    <div style="text-align: center; margin-top: 50px;">
+      <a href="projects.html" class="btn btn-primary scroll-fade">View My Projects</a>
+      <a href="contact.html" class="btn btn-secondary scroll-fade">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Kelvin's Portfolio. All rights reserved.</p>
+        <a href="https://github.com/BCS-05-0109KEVIN" class="github-link" title="View source code on GitHub" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot Widget -->
+  <div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-widget">
+      <div class="chatbot-header">
+        <h3>Kelvin's Assistant</h3>
+        <button class="chatbot-close" id="chatbotClose">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="message bot-message">
+          <p>Hi! 👋 I'm Kelvin's AI assistant. I can help you navigate the site or tell you more about Kelvin. What would you like to know?</p>
+        </div>
+      </div>
+      <div class="chatbot-input-area">
+        <input 
+          type="text" 
+          id="chatbotInput" 
+          class="chatbot-input" 
+          placeholder="Ask me anything..."
+          autocomplete="off"
+        >
+        <button class="chatbot-send" id="chatbotSend">Send</button>
+      </div>
+    </div>
+    <button class="chatbot-toggle" id="chatbotToggle" title="Open chatbot">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
